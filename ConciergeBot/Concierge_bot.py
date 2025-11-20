@@ -1,14 +1,13 @@
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-import asyncio
 import os
 import re
 
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
-PREFIX = '!'
+PREFIX = '//'
 intents = discord.Intents().all()
 
 bot = commands.Bot(command_prefix=PREFIX, intents=intents)
